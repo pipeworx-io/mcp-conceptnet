@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/conceptnet",
   "title": "Conceptnet",
   "description": "ConceptNet MCP — open multilingual word/phrase relation graph",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/conceptnet",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-conceptnet",
