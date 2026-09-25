@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-conceptnet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ConceptNet MCP — open multilingual word/phrase relation graph",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-924ef9c0684615c6dccfa4e805187de1042941d7a38d949f4528db434f3f4fc7",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-8aa96cd734cca36e2e848ee922a4b8ad1a289b385c89d343e20af0b8070adac1",
+    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
   }
 }
