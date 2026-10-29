@@ -1,0 +1,98 @@
+[
+  {
+    "name": "lookup",
+    "description": "All edges touching a term in a language.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "type": "string",
+          "description": "Word or phrase"
+        },
+        "lang": {
+          "type": "string",
+          "description": "ISO-639-1 code (default en)"
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-1000 (default 50)"
+        },
+        "offset": {
+          "type": "number",
+          "description": "0-based offset"
+        },
+        "only_rel": {
+          "type": "string",
+          "description": "Restrict to one relation (e.g. \"IsA\", \"UsedFor\")"
+        },
+        "end_node_lang": {
+          "type": "string",
+          "description": "Restrict end-node language"
+        }
+      },
+      "required": [
+        "term"
+      ]
+    }
+  },
+  {
+    "name": "query",
+    "description": "Generic /query edge search (combine rel, start, end, node, source).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "rel": {
+          "type": "string",
+          "description": "Relation URI (with or without /r/ prefix)"
+        },
+        "start": {
+          "type": "string",
+          "description": "Start node — \"/c/en/dog\" or \"dog\""
+        },
+        "end": {
+          "type": "string",
+          "description": "End node"
+        },
+        "node": {
+          "type": "string",
+          "description": "Match either start or end"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source dataset URI"
+        },
+        "limit": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "relatedness",
+    "description": "Semantic-relatedness score (0..1) between two terms.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "node1": {
+          "type": "string",
+          "description": "First term or /c/en/<word> node"
+        },
+        "node2": {
+          "type": "string",
+          "description": "Second term or /c/en/<word> node"
+        },
+        "lang": {
+          "type": "string",
+          "description": "Default lang for plain-text terms (default en)"
+        }
+      },
+      "required": [
+        "node1",
+        "node2"
+      ]
+    }
+  }
+]
