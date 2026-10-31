@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-conceptnet",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ConceptNet MCP — open multilingual word/phrase relation graph",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "conceptnet",
     "gatewaySlug": "conceptnet",
-    "sourceHash": "v1-9534bf9f5520880dfff9f4744fb9ade052065ef5e19d02ea342a59d09949c72f",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-2285e7cbe216630cbe2983e4e2595cc4c57fc2910b352dbe681b2611517af4c5",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
